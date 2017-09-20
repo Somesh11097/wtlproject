@@ -1,0 +1,18 @@
+.card{
+	padding-left: 60px;
+	width:200px;
+	
+}
+.card-img-top{
+	width: 200px;
+	height: 250px;
+}
+.card-block{
+	width: 200px;
+	background-color: #393522;
+}
+.card-title{
+	font-family: sans-serif;
+	font-size: 25px;
+	color:#F7D847;
+}

@@ -1,0 +1,35 @@
+img{
+	float:right;
+	padding-right: 3px;
+	width: 83px;
+	height: 22px;
+}
+.navbar-brand{
+
+	font-family: sans-serif;
+	font-size: 30px;
+	font-style: italic;
+}
+.glyphicon.glyphicon-log-in{
+	font-size: 20px;
+}
+body{
+	 background: url('../img/sies.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+a{
+  width:300px;
+}
+h1{ 
+	font-family: "Impact";
+	font-size: 65px;
+	font-weight: 50px;
+	color:#C9B869;
+}
+
+#college{
+	text-align: center;
+}
