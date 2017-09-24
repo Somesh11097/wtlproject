@@ -18,6 +18,24 @@ body{
 	color:#6a6f8c;
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
+
+select{
+	padding-left: 165px;
+	width:387px;
+	height:45px;
+	border-radius:45px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+option{
+
+	background:rgba(40,57,101,.9);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+}
+
+
 *,:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
