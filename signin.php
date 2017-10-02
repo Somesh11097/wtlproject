@@ -2,7 +2,7 @@
     $server="localhost";
     $user="root";
     $pass="";
-    $db="DB1";
+    $db="signupusers";
     $conn=mysqli_connect("$server","$user","$pass","$db");
 
     $a=$_POST["user"];
@@ -10,21 +10,24 @@
     $c=$_POST["pr"];
 
     session_start();
-     $sql="SELECT * FROM T1 WHERE name='$a' AND branch='$b' AND prn='$c'";
+     $sql="SELECT * FROM Student WHERE name='$a' AND branch='$b' AND prn='$c'";
 if($result=mysqli_query($conn,$sql))
 {   
     if(mysqli_num_rows($result)>0)
-    {
+    {   
+        header("Location:postlogin.html");
+        exit;
         
-        echo $row["name"]." ".$row["branch"]." ".$row["prn"]."<br>";
-   	 
-    
-    }
+   	 }
             else
         {
-            echo "no data found";
+            header("Cannot login");
         }
 }
+ else
+        {
+            header("Cannot login");
+        }
 
     
 
