@@ -8,7 +8,6 @@
     $a=$_POST["user"];
     $b=$_POST["br"];
     $c=$_POST["pr"];
-
     session_start();
      $sql="SELECT * FROM Student WHERE name='$a' AND branch='$b' AND prn='$c'";
 if($result=mysqli_query($conn,$sql))
@@ -21,14 +20,18 @@ if($result=mysqli_query($conn,$sql))
    	 }
             else
         {
-            header("Cannot login");
+           echo '<!DOCTYPE html>
+                <html>
+                <head">
+                <script>
+                alert("InCorrect Details\nTry Again");
+                window.location = "login.html";
+                </script>
+                </head>
+                <body>
+                </body>
+                </html>';
         }
 }
- else
-        {
-            header("Cannot login");
-        }
-
-    
-
+ 
 ?>
